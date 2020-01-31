@@ -8,7 +8,6 @@ body {
   opacity: 0;
 }
 
-
 /*--- Nav Scrolling Offset --*/
 .offset:before {
   height: 4rem;
@@ -339,15 +338,10 @@ h3.heading {
   background-color: #E9ECEF;
 }
 
-/* #portfolio .container-fluid .portfolio-item {
-  margin: 0 5rem;
-} */
-
 .portfolio-item {
   transition: transform 1s cubic-bezier(.7,-0.39,.31,1.38); 
   transform-style: preserve-3d;
-  width: 300px;
-}
+}  
 
 .circle {
   position: absolute;
@@ -718,15 +712,10 @@ footer .row p {
   #portfolio {
     padding-bottom: 6.5rem;
   }
-  
-  #portfolio .container-fluid .portfolio-item {
-    margin: 0 10rem;
+
+  #portfolio .container-fluid {
+    width: 95%;
   }
-  
- 
-
- 
-
 }
 
 
