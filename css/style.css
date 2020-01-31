@@ -67,6 +67,7 @@ body {
               url('../img/setup.jpg');
   
 }
+
 .caption {
   width: 100%;
   max-width: 100%;
@@ -74,9 +75,10 @@ body {
   top: 33%;
   z-index: 1;
 }
+
 .caption h1 {
   color: white;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .2rem;
@@ -427,6 +429,11 @@ footer .row p {
   margin-bottom: 0;
 }
 
+footer .personal {
+  padding-left: 35%;
+  margin-top: 1.5rem;
+}
+
 .avatar {
   border-radius: 50%;
   margin-bottom: 2rem;
@@ -453,19 +460,20 @@ footer svg.svg-inline--fa {
 	margin: 1.2rem 0.5rem 0 -3rem;
 }
 
-#git  {
-	font-size: 2rem;
-  margin: 1.5rem 0.5rem 0 1rem;
-  
-}
-
-#linkedin  {
-	font-size: 2rem;
-	margin: 1.5rem 0.5rem 0 0rem;
+#email,
+#git,
+#linkedin {
+  font-size: 2rem;
+  margin: 0 .6rem .6rem .6rem;
 }
 
 footer svg.svg-inline--fa:hover {
   color: #4bffa5!important;
+  transition: .6s;
+}
+
+.city {
+  margin-left: .6rem;
 }
 
 footer h2 {
@@ -500,50 +508,13 @@ footer li {
 
 /*============= CONTACT FORM =============*/
 
-.form-group {
-	margin-bottom: 1.3rem;
-	font-family: Roboto Slab;
-}
+/*============= CSS LINKED IN FORM.CSS =============*/
 
-.form-control {
-  background-color: #53595f;
-  border-radius: 0;
-  border: .15rem solid #666b71;
-  color: white!important;
-  font-size: 1.1rem;
-}
 
-.form-control:focus {
-  background: #53595f;
-  border: .15rem solid #666b71;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #b2b5b8!important;
-  font-family: Roboto Slab; 
-  letter-spacing: .1rem;  
-}
-
-input.btn {
-  cursor: pointer;
-}
 
 hr.socket {
   border-top: .2rem solid #666b71;
   width: 100%;
-}
-
-.rem {
-	font-family: Roboto Slab;
-	letter-spacing: 0.075rem;
-	padding-bottom: 2rem;
-}
-
-.rem2 {
-	font-family: Roboto Slab;
-	letter-spacing: 0.15rem;
-	padding-top: 3rem;
 }
 
 /*============= TOP SCROLL =============*/
@@ -587,17 +558,11 @@ footer .row p {
     top: 35%;
   }
   
-  .caption h1 {
-    font-size: 2rem;
+  /* .caption h1 {
+    font-size: 2.5rem;
     letter-spacing: .1rem;
     padding-bottom: .4rem;
   }
-
-  /* .caption h2 {
-    font-size: 1.2rem;
-    letter-spacing: .1rem; 
-    padding-bottom: 1rem;
-  }  */
 
   .caption h3 {
     font-size: 1.4rem;
@@ -608,10 +573,14 @@ footer .row p {
     padding: .4rem .9rem;
     font-size: 1.2rem;
     letter-spacing: .1rem;
-  }
+  } */
 
   .narrow {
     width: 85%;
+  }
+
+  footer .personal {
+    padding-left: 37%;
   }
 }
 
@@ -627,12 +596,6 @@ footer .row p {
     padding-bottom: .5rem;
   }
 
- /* .caption h2 {
-    font-size: 1.7rem;
-    letter-spacing: .15rem; 
-    padding-bottom: 1.2rem;
-  }  */
-
   .caption h3 {
     font-size: 1.5rem;
     padding-bottom: 1.2rem;
@@ -647,6 +610,9 @@ footer .row p {
   .narrow h1 {
     font-size: 1.8rem;
   }
+  footer .personal {
+    padding-left: 5%;
+  }
  
   .top-scroll {
     display: none!important;
@@ -656,7 +622,7 @@ footer .row p {
 /* Devices under 992px (lg) */
 @media (min-width: 992px) {
   .caption {
-    top: 30%;
+    top: 33%;
   }
 
   .caption h1 {
@@ -664,12 +630,6 @@ footer .row p {
     letter-spacing: .2rem;
     padding-bottom: .8rem;
   }
-    
- /* .caption h2 {
-    font-size: 2rem;
-    padding-bottom: 1.7rem;
-    letter-spacing: .2rem;
-  }  */
 
  .caption h3 {
     font-size: 1.7rem;
@@ -685,11 +645,16 @@ footer .row p {
  .narrow h1 {
     font-size: 2.1rem;
   }
+
+  footer .personal {
+    padding-left: 10%;
+    
+  }
 }
 
 @media (min-width: 1200px) {
   .caption {
-    top: 28%;
+    top: 30%;
   }
 
   .caption h1 {
@@ -697,12 +662,6 @@ footer .row p {
     letter-spacing: .2rem;
     padding-bottom: .8rem;
   }
-    
- /* .caption h2 {
-    font-size: 2rem;
-    padding-bottom: 1.7rem;
-    letter-spacing: .2rem;
-  }  */
 
  .caption h3 {
     font-size: 2rem;
