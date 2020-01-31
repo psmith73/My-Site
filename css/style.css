@@ -352,7 +352,7 @@ h3.heading {
 }
 
 .text {
-  font-size: 1.1rem;
+  font-size: .75rem;
   letter-spacing: .1rem;
   text-transform: uppercase;
 }
@@ -616,6 +616,10 @@ footer .row p {
  
   .top-scroll {
     display: none!important;
+  }
+
+  .text {
+    font-size: 1.1rem;
   }
 }
 
