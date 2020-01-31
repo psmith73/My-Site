@@ -124,8 +124,8 @@ if ($(this).scrollTop() > 500) { //if scroll from top is more than 500
             else {
                 $(this).removeClass('has-val');
             }
-        })    
-    })
+        });    
+    });
             
   
     
