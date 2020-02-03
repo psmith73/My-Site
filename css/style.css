@@ -31,6 +31,17 @@ body {
   letter-spacing: .1rem;
   transition: background-color .5s ease 0s;
 }
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+  color: #4bffa5;
+}
+
 .navbar-brand img {
   height: 2rem;
 }
