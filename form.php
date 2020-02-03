@@ -7,9 +7,9 @@ if (isset($_POST['submit'])) {
 
     $mailTo = "philipm.smith@icloud.com";
     $headers = "From: ".$mailFrom;
-    $txt = "You have received en email from ".$name.".\n\n".$message;
+    $txt = "You have received an email from ".$name.".\n\n".$message;
 
     
-    mail($mailTo, $txt, $headers);
+    mail($mailTo, $headers, $txt );
     header("Location: index.html?mailsend");
 }
