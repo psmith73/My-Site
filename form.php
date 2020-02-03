@@ -11,7 +11,7 @@
 
         
         mail($mailTo, $headers, $txt );
-        header("Location: index.html?mailsend");
+        
     }
 
 ?>
