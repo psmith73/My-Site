@@ -1,50 +1,27 @@
 <?php
-    
-    $errors = '';
-$myemail = 'philipm.smith@icloud.com';//<-----Put Your email address here.
-if(empty($_POST['name'])  || 
-   empty($_POST['email']) || 
-   empty($_POST['message']))
-{
-    $errors .= "\n Error: all fields are required";
-}
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$message = $_POST['message'];
 
-$name = $_POST['name']; 
-$email_address = $_POST['email']; 
-$message = $_POST['message']; 
 
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
-$email_address))
-{
-    $errors .= "\n Error: Invalid email address";
-}
+$email_from = 'philipm.smith@icloud.com.com';
 
-if( empty($errors))
+$email_subject = "New Contact Form Submission";
 
-{
+$email_body = "From: $name.\n".
+"Email: $visitor_email.\n".
+"Message: $message.\n";
 
-$to = $myemail;
 
-$email_subject = "Contact form submission: $name";
+$to = "philipm.smith@icloud.com";
 
-$email_body = "You have received a new message. ".
+$headers = "From: $email_from \r\n";
 
-" Here are the details:\n Name: $name \n ".
-
-"Email: $email_address\n Message \n $message";
-
-$headers = "From: $myemail\n";
-
-$headers .= "Reply-To: $email_address";
+$headers .= "Reply To: $visitor_email \r\n";
 
 mail($to,$email_subject,$email_body,$headers);
 
-//redirect to the 'thank you' page
-
-header('Location: index.html');
-
-}
+header("Location: https://www.philipsmithwebdev.com/");
 
 
 
@@ -54,13 +31,7 @@ header('Location: index.html');
 
 
 
-$name = $_POST['name'];
-    $mailFrom = $_POST['email'];
-    $message = $_POST['message'];
 
-    $mailTo = "philipm.smith@icloud.com";
-    $headers = "From: ".$mailFrom;
-    $txt = "You have received an email from ".$name.".\n\n".$message;
 
-    
-    mail($mailTo, $headers, $txt );
+
+
