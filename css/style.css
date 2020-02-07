@@ -83,7 +83,7 @@ body {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 30%;
+  top: 33%;
   z-index: 1;
 }
 
@@ -608,7 +608,7 @@ footer .row p {
   }
 
   .caption h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-bottom: 1.2rem;
   }
 
@@ -637,7 +637,7 @@ footer .row p {
 /* Devices under 992px (lg) */
 @media (min-width: 992px) {
   .caption {
-    top: 33%;
+    top: 30%;
   }
 
   .caption h1 {
@@ -647,7 +647,7 @@ footer .row p {
   }
 
  .caption h3 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     padding-bottom: 1.7rem;
   }
 
