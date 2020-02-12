@@ -586,6 +586,10 @@ footer .row p {
     letter-spacing: .1rem;
   } */
 
+  .top-scroll {
+    display: none!important;
+  }
+
   .narrow {
     width: 85%;
   }
@@ -623,10 +627,6 @@ footer .row p {
   }
   footer .personal {
     padding-left: 5%;
-  }
- 
-  .top-scroll {
-    display: none!important;
   }
 
   .text {
