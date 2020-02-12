@@ -563,7 +563,7 @@ footer .row p {
 
 
 /*============= MEDIA QUERIES =============*/
-/* Devices under 576px (sm) */
+/* Devices over 576px (sm) */
 @media (min-width: 576px) {
   .caption {
     top: 35%;
@@ -599,7 +599,7 @@ footer .row p {
   }
 }
 
-/* Devices under 768px (md) */
+/* Devices over 768px (md) */
 @media (min-width: 768px) {
   .caption {
     top: 33%;
@@ -625,6 +625,11 @@ footer .row p {
   .narrow h1 {
     font-size: 1.8rem;
   }
+
+  .top-scroll {
+    display: inline-block!important;
+  }
+
   footer .personal {
     padding-left: 5%;
   }
@@ -634,7 +639,7 @@ footer .row p {
   }
 }
 
-/* Devices under 992px (lg) */
+/* Devices over 992px (lg) */
 @media (min-width: 992px) {
   .caption {
     top: 30%;
