@@ -635,7 +635,7 @@ footer .row p {
   }
 
   .text {
-    font-size: 1.1rem;
+    font-size: .8rem;
   }
 }
 
@@ -660,10 +660,6 @@ footer .row p {
     padding: .7rem 1.2rem;
     font-size: 1rem;
     letter-spacing: .2rem;
-  }
-
-  .text {
-    font-size: .9rem;
   }
 
  .narrow h1 {
