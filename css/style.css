@@ -83,7 +83,7 @@ body {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 33%;
+  top: 31%;
   z-index: 1;
 }
 
@@ -110,7 +110,7 @@ body {
 
 .caption h3 {
   color: white;
-  font-size: 1rem;
+  font-size: .9rem;
   text-transform: uppercase;
   font-weight: 400;
   text-shadow: .1rem .1rem .5rem black;
@@ -571,7 +571,7 @@ footer .row p {
     top: 35%;
   }
   
-  /* .caption h1 {
+  .caption h1 {
     font-size: 2.5rem;
     letter-spacing: .1rem;
     padding-bottom: .4rem;
@@ -586,7 +586,7 @@ footer .row p {
     padding: .4rem .9rem;
     font-size: 1.2rem;
     letter-spacing: .1rem;
-  } */
+  }
 
   .top-scroll {
     display: none!important;
@@ -604,22 +604,22 @@ footer .row p {
 /* Devices over 768px (md) */
 @media (min-width: 768px) {
   .caption {
-    top: 33%;
+    top: 31%;
   }
   
   .caption h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     letter-spacing: .15rem;
-    padding-bottom: .5rem;
+    padding-bottom: .3rem;
   }
 
   .caption h3 {
-    font-size: 1.3rem;
-    padding-bottom: 1.2rem;
+    font-size: 1rem;
+    padding-bottom: .9rem;
   }
 
   .btn-lg {
-    padding: .6rem 1.1rem;
+    padding: .6rem .9rem;
     font-size: 1rem;
     letter-spacing: .15rem;
   }
@@ -644,7 +644,7 @@ footer .row p {
 /* Devices over 992px (lg) */
 @media (min-width: 992px) {
   .caption {
-    top: 30%;
+    top: 31%;
   }
 
   .caption h1 {
@@ -655,11 +655,11 @@ footer .row p {
 
  .caption h3 {
     font-size: 1.3rem;
-    padding-bottom: 1.7rem;
+    padding-bottom: .7rem;
   }
 
  .btn-lg {
-    padding: .7rem 1.2rem;
+    padding: .7rem 1rem;
     font-size: 1rem;
     letter-spacing: .2rem;
   }
@@ -674,7 +674,9 @@ footer .row p {
   }
 }
 
+/* Devices over 1200px (xl) */
 @media (min-width: 1200px) {
+  
   .caption {
     top: 28%;
   }
@@ -686,7 +688,7 @@ footer .row p {
   }
 
  .caption h3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding-bottom: 1.7rem;
   }
 
@@ -696,6 +698,25 @@ footer .row p {
 
   #portfolio .container-fluid {
     width: 95%;
+  }
+}
+
+/* Devices over 1200px (xxl) */
+@media (min-width: 1500px) {
+  
+  .caption {
+    top: 29%;
+  }
+
+  .caption h1 {
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    padding-bottom: .8rem;
+  }
+
+ .caption h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1.7rem;
   }
 }
 
