@@ -8,13 +8,13 @@ body {
   opacity: 0;
 }
 
-/*--- Nav Scrolling Offset --*/
+/* --- Nav Scrolling Offset --
 .offset:before {
   height: 4rem;
   margin-top: -4rem;
   content: "";
   display: block;
-}
+} */
 
 /*--- Extra Bootstrap Column Padding --*/
 [class*="col-"] {
@@ -363,7 +363,7 @@ h3.heading {
 }
 
 .text {
-  font-size: .75rem;
+  font-size: .9rem;
   letter-spacing: .1rem;
   text-transform: uppercase;
 }
@@ -382,6 +382,8 @@ svg,
   backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  transform:translate3d(0,0,0);
+  -webkit-transform:translate3d(0,0,0);
 }
 
 .backside {
