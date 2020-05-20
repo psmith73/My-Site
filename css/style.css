@@ -75,7 +75,7 @@ body {
   background: linear-gradient(
               rgba(30,30,30, .5), 
               rgba(30,30,30, .5)),
-              url('../img/setup.jpg');
+              url('../img/the-setup.jpg');
   
 }
 
@@ -83,13 +83,13 @@ body {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 31%;
+  top: 22%;
   z-index: 1;
 }
 
 .caption h1 {
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .2rem;
@@ -110,7 +110,7 @@ body {
 
 .caption h3 {
   color: white;
-  font-size: .9rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 400;
   text-shadow: .1rem .1rem .5rem black;
@@ -122,7 +122,7 @@ body {
   border-width: medium;
   border-radius: 0;
   padding: .8rem 1.5rem;
-  font-size: .75rem;
+  font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
   display: inline-block!important;
@@ -567,7 +567,7 @@ footer .row p {
 /*============= MEDIA QUERIES =============*/
 /* Devices over 576px (sm) */
 @media (min-width: 576px) {
-  .caption {
+  /* .caption {
     top: 35%;
   }
   
@@ -586,7 +586,7 @@ footer .row p {
     padding: .4rem .9rem;
     font-size: 1.2rem;
     letter-spacing: .1rem;
-  }
+  } */
 
   .top-scroll {
     display: none!important;
@@ -603,26 +603,22 @@ footer .row p {
 
 /* Devices over 768px (md) */
 @media (min-width: 768px) {
-  .caption {
-    top: 31%;
-  }
-  
   .caption h1 {
-    font-size: 2.7rem;
+    font-size: 3.5rem;
     letter-spacing: .15rem;
-    padding-bottom: .3rem;
+    padding-bottom: .6rem;
   }
 
   .caption h3 {
-    font-size: 1rem;
+    font-size: 1.7rem;
     padding-bottom: .9rem;
   }
 
   .btn-lg {
-    padding: .6rem .9rem;
+    padding: .7rem 1rem;
     font-size: 1rem;
-    letter-spacing: .15rem;
-  }
+    letter-spacing: .2rem;
+  } 
 
   .narrow h1 {
     font-size: 1.8rem;
@@ -644,24 +640,18 @@ footer .row p {
 /* Devices over 992px (lg) */
 @media (min-width: 992px) {
   .caption {
-    top: 31%;
+    top: 12%;
   }
 
   .caption h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     letter-spacing: .2rem;
     padding-bottom: .8rem;
   }
 
  .caption h3 {
-    font-size: 1.3rem;
-    padding-bottom: .7rem;
-  }
-
- .btn-lg {
-    padding: .7rem 1rem;
-    font-size: 1rem;
-    letter-spacing: .2rem;
+    font-size: 2.5rem;
+    padding-bottom: 1.7rem;
   }
 
  .narrow h1 {
@@ -677,20 +667,21 @@ footer .row p {
 /* Devices over 1200px (xl) */
 @media (min-width: 1200px) {
   
-  .caption {
-    top: 28%;
+  /* .caption {
+    top: 12%;
   }
 
   .caption h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: .2rem;
     padding-bottom: .8rem;
   }
 
  .caption h3 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     padding-bottom: 1.7rem;
-  }
+  } */
+
 
   #portfolio {
     padding-bottom: 6.5rem;
@@ -701,11 +692,11 @@ footer .row p {
   }
 }
 
-/* Devices over 1200px (xxl) */
+/* Devices over 1200px (xxl)
 @media (min-width: 1500px) {
   
   .caption {
-    top: 29%;
+    top: 12%;
   }
 
   .caption h1 {
@@ -718,7 +709,7 @@ footer .row p {
     font-size: 2.5rem;
     padding-bottom: 1.7rem;
   }
-}
+} */
 
 
 
