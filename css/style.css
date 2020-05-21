@@ -8,14 +8,6 @@ body {
   opacity: 0;
 }
 
-/* --- Nav Scrolling Offset --
-.offset:before {
-  height: 4rem;
-  margin-top: -4rem;
-  content: "";
-  display: block;
-} */
-
 /*--- Extra Bootstrap Column Padding --*/
 [class*="col-"] {
   padding: 1rem;
@@ -94,27 +86,14 @@ body {
   font-weight: 700;
   letter-spacing: .2rem;
   text-shadow: .1rem .1rem .8rem black;
-  padding-bottom: .7rem;
 }
 
-/* .caption h2 {
+.caption h3 {
   color: white;
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 400;
   text-shadow: .1rem .1rem .5rem black;
-  padding-bottom: 2rem;
-  letter-spacing: .3rem; 
-  line-height: 4rem;   
-} */
-
-.caption h3 {
-  color: white;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-shadow: .1rem .1rem .5rem black;
-  padding-bottom: .7rem;
   letter-spacing: .2rem; 
 }
 
@@ -532,6 +511,8 @@ hr.socket {
 
 /*============= TOP SCROLL =============*/
 
+
+
 .top-scroll svg.svg-inline--fa {
   font-size: 3rem;
   height: 1.7rem;
@@ -567,30 +548,7 @@ footer .row p {
 /*============= MEDIA QUERIES =============*/
 /* Devices over 576px (sm) */
 @media (min-width: 576px) {
-  /* .caption {
-    top: 35%;
-  }
-  
-  .caption h1 {
-    font-size: 2.5rem;
-    letter-spacing: .1rem;
-    padding-bottom: .4rem;
-  }
 
-  .caption h3 {
-    font-size: 1.4rem;
-    padding-bottom: 1rem;
-  }
-
-  .btn-lg {
-    padding: .4rem .9rem;
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
-  } */
-
-  .top-scroll {
-    display: none!important;
-  }
 
   .narrow {
     width: 85%;
@@ -603,15 +561,17 @@ footer .row p {
 
 /* Devices over 768px (md) */
 @media (min-width: 768px) {
+  .caption {
+    top: 17%;
+  }
+
   .caption h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: .15rem;
-    padding-bottom: .6rem;
   }
 
   .caption h3 {
-    font-size: 1.7rem;
-    padding-bottom: .9rem;
+    font-size: 3.3rem;
   }
 
   .btn-lg {
@@ -622,10 +582,6 @@ footer .row p {
 
   .narrow h1 {
     font-size: 1.8rem;
-  }
-
-  .top-scroll {
-    display: inline-block!important;
   }
 
   footer .personal {
@@ -646,12 +602,10 @@ footer .row p {
   .caption h1 {
     font-size: 5rem;
     letter-spacing: .2rem;
-    padding-bottom: .8rem;
   }
 
  .caption h3 {
-    font-size: 2.5rem;
-    padding-bottom: 1.7rem;
+    font-size: 4.5rem;
   }
 
  .narrow h1 {
@@ -666,24 +620,7 @@ footer .row p {
 
 /* Devices over 1200px (xl) */
 @media (min-width: 1200px) {
-  
-  /* .caption {
-    top: 12%;
-  }
-
-  .caption h1 {
-    font-size: 5rem;
-    letter-spacing: .2rem;
-    padding-bottom: .8rem;
-  }
-
- .caption h3 {
-    font-size: 2.5rem;
-    padding-bottom: 1.7rem;
-  } */
-
-
-  #portfolio {
+    #portfolio {
     padding-bottom: 6.5rem;
   }
 
@@ -691,25 +628,6 @@ footer .row p {
     width: 95%;
   }
 }
-
-/* Devices over 1200px (xxl)
-@media (min-width: 1500px) {
-  
-  .caption {
-    top: 12%;
-  }
-
-  .caption h1 {
-    font-size: 5rem;
-    letter-spacing: .2rem;
-    padding-bottom: .8rem;
-  }
-
- .caption h3 {
-    font-size: 2.5rem;
-    padding-bottom: 1.7rem;
-  }
-} */
 
 
 
