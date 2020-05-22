@@ -327,6 +327,10 @@ h3.heading {
   z-index: 1000!important;
 }
 
+.dark p {
+  margin-bottom: 1rem;
+}
+
 .dark h2, .dark p {
   color: #E9ECEF;
 }
