@@ -22,6 +22,7 @@ body {
   font-weight: 700;
   letter-spacing: .1rem;
   transition: background-color .5s ease 0s;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .navbar-brand {
@@ -37,21 +38,26 @@ body {
 .navbar-brand img {
   height: 2rem;
 }
+
 .svg-inline--fa.fa-w-14 {
 	color: white;
 	font-size: 2rem;
 }
+
 .navbar-nav li {
   padding-right: .8rem;
 }
+
 .navbar-nav .nav-link {
   color: white;
   padding-top: .8rem;
 }
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: #4bffa5;
 }
+
 .navbar.solid {
   background: rgba(0, 0, 0, 0.7)!important;
   transition: background-color 1s ease 0s;
@@ -184,6 +190,17 @@ a.down-arrow {
 }
 
 /*============= FEATURES SECTION =============*/
+.offset {
+  background-color: #E9ECEF;
+}
+
+.intro {
+  padding: 3rem 0;
+}
+
+.intro p {
+  text-align: left;
+}
 
 .mission {
   font-size: 1.5rem;
@@ -192,7 +209,8 @@ a.down-arrow {
 
 .mission a {
   text-decoration: none;
-  color: #4bffa5;
+  border-bottom: 3px solid #4bffa5;
+  color: inherit;
 }
 
 .mission a:hover {
@@ -211,34 +229,30 @@ a.down-arrow {
   border-width: medium;
   border-radius: 0;
   padding: .5rem 1.1rem;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
   margin: 1rem;
 }
 
 .btn-secondary {
-  border-color: rgba(57, 63, 70, 0.85);
+  border: none;
   background-color: rgba(57, 63, 70, 0.85);
   color: white;
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-  border-color: rgba(37, 41, 46, 0.85);
   background-color: rgba(37, 41, 46, 0.85);
-  color: white;
 }
 
 .btn-green {
-  border-color: #4bffa5;
+  border: none;
   background-color: #4bffa5;
-  color: white;
+  color: rgba(37, 41, 46, 0.85);
 }
 .btn-green:hover,
 .btn-green:focus {
-  border-color: #45eb98;
   background-color: #45eb98;
-  color: white;
 }
 
 .jumbotron {
@@ -302,14 +316,14 @@ h3.heading {
 /*===== FIXED BACKGROUND IMG DARK =====*/
 
 .fixed {
-  background-image: url('../img/code.jpg');
+  background-image: url('../img/resume.jpg');
   z-index: -1;
 }
 
 .dark {
   background-color: rgba(0, 0, 0, 0.75);
-  padding: 7rem 2rem;
-  text-align: center;
+  padding: 2rem 1rem;
+  text-align: left;
   z-index: 1000!important;
 }
 
@@ -319,6 +333,11 @@ h3.heading {
 
 .dark h3, .dark p {
   color: #E9ECEF;
+  font-size: 1.4rem;
+}
+
+.modal-dialog {
+  max-width: 90%;
 }
 
 /*============= PORTFOLIO SECTION =============*/
@@ -548,8 +567,6 @@ footer .row p {
 /*============= MEDIA QUERIES =============*/
 /* Devices over 576px (sm) */
 @media (min-width: 576px) {
-
-
   .narrow {
     width: 85%;
   }
@@ -584,6 +601,10 @@ footer .row p {
     font-size: 1.8rem;
   }
 
+  .dark {
+    padding: 6rem 4rem;
+  }
+
   footer .personal {
     padding-left: 5%;
   }
@@ -591,10 +612,18 @@ footer .row p {
   .text {
     font-size: 1rem;
   }
+
+  .modal-dialog {
+    max-width: 80%;
+  }
 }
 
 /* Devices over 992px (lg) */
 @media (min-width: 992px) {
+  .navbar {
+    background: none;
+  }
+  
   .caption {
     top: 12%;
   }
@@ -626,6 +655,10 @@ footer .row p {
 
   #portfolio .container-fluid {
     width: 95%;
+  }
+
+  .modal-dialog {
+    max-width: 57%;
   }
 }
 
