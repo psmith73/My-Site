@@ -340,6 +340,10 @@ h3.heading {
   font-size: 1.4rem;
 }
 
+.view {
+  display: none;
+}
+
 .modal-dialog {
   max-width: 90%;
 }
@@ -643,6 +647,10 @@ footer .row p {
 
  .narrow h1 {
     font-size: 2.1rem;
+  }
+
+  .view {
+    display: inline;
   }
 
   footer .personal {
