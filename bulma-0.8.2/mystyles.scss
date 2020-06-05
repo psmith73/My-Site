@@ -1,0 +1,416 @@
+//Variables & Functions
+@import "sass/utilities/initial-variables.sass";
+@import "sass/utilities/functions.sass";
+
+// ======================================
+//  MY STYLES
+// ======================================
+ 
+//Colors
+$green: #037971;  //114B5F  1B998B
+$primary: $green;
+$coffee: #372F33;
+$dark: $coffee;
+$blue: #114b5f;
+$secondary: $blue;
+
+a {
+    outline: none;
+}
+
+//Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+$family-serif: 'Poppins', sans-serif;
+$family-primary: $family-serif;
+
+// Nav 
+.navbar {
+   padding: 1.2rem 0; 
+}
+
+.hero.is-white .hero-head .navbar .container .navbar-brand a.navbar-item,
+.is-contact .navbar-brand {
+    color: $primary !important;
+    font-weight: 600;
+    font-size: 1.75rem;
+
+    &:hover {
+        color: $primary;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.hero.is-white .navbar-end .navbar-item a {
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    border-width: 2px;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+.navbar .navbar-brand .navbar-burger {
+    transition: .3s ease-in-out;
+    color: $dark;
+
+    &:hover {
+        color: $primary;
+        background-color: transparent;
+    }
+
+    span {
+        height: 2px;
+        width: 20px;
+    }
+}
+
+//Hero Body
+.hero-body .container .columns .column .title {
+    color: $primary;
+}
+
+.hero-body .container .columns .column .subtitle {
+    color: $dark;
+}
+
+.avatar {
+    margin: 2rem 0;
+    width: 175px;
+
+    @media (min-width:769px) {
+        width: 250px;
+    }    
+}
+
+//Hero Footer
+.hero-foot img {
+    margin-bottom: .5rem;
+}
+
+//Bio Section 
+.section.bio.is-primary {
+    margin-top: -.5rem;
+    background-color: $primary;
+
+    // background-image: linear-gradient(141deg,#024636 0,#037971 71%,#048290 100%);
+}
+
+.section.bio .container .columns .column .title, 
+.section.bio .container .columns .column .subtitle {
+    color: $white;
+}
+
+.section.bio a {
+    color: $secondary;  // f1e8b8   #ccc5b9
+}
+
+.section.bio.is-medium.is-long {
+    padding-bottom: 14rem;
+
+    @media (min-width:769px) {
+        padding-bottom: 16rem;
+    }
+}
+
+.bio.is-slanted-bottom {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 70px));
+}
+
+//Skills
+.section.skills {
+    margin-top: -14rem;
+    padding-bottom: 1rem;
+    margin-bottom: 9rem;
+}
+
+.section.skills .box .content .columns .column .image img {
+    height: 70px;
+    width: auto;
+}
+
+.skills .columns .column .title {
+    color: $primary;
+}
+
+
+.hero .hero-body .container .content .columns .column .subtitle {
+    color: $white;
+}
+
+.section .container .box .content .columns .column ul {
+    list-style: disc inside;
+}
+
+.skills .box .content p,
+.skills .box .content ul li {
+    color: $dark;
+}
+
+.skills .box .content ul a li {
+    color: $secondary;
+
+    &:hover,
+    &:visited,
+    &:active {
+        text-decoration: none;
+        color: $secondary;
+        border: none;
+    }
+}
+
+.section.skills .box .content .columns .column {
+    padding: 50px 30px;
+
+    @media (min-width:769px) {
+        padding: 60px 35px;
+    }
+}
+
+.section.skills .box .content .columns .column {
+    border-bottom: 1px solid #E6ECF8;
+    border-right: 0px solid #E6ECF8;
+
+    &:nth-of-type(3) {
+        border: none;
+    }
+
+    @media (min-width:769px) {
+        border-bottom: 0px solid #E6ECF8;
+        border-right: 1px solid #E6ECF8;
+        padding: 60px 35px;
+    }
+}
+
+//Resume 
+.is-slanted-both {
+    padding: 9rem 0;
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+}
+
+.hero .hero-body .container .content .columns .column h2 {
+    color: $white;
+}
+
+.hero .hero-body .container .content .columns .column a {
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    border-width: 2px;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+//Featured Project
+.section.is-narrow .container .title {
+    color: $primary;
+}
+
+.section.is-narrow .container .subtitle,
+.section.is-narrow .container .columns .column p {
+    color: $dark;
+}
+
+.section .container .columns .column figure img.image {
+    margin: 3rem 0;
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    // height: 220px;
+}
+
+.image.is-16by9 {
+    padding-top: 0;
+}
+
+.section .container .columns .column .button.is-primary.is-outlined.is-rounded.is-medium {
+    margin-top: 1.5rem;
+}
+
+.section .container .columns .column a {
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    border-width: 2px;
+    
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+//Work Together
+.section.call-to-action {
+    margin-bottom: -12rem;
+    position: sticky;
+    z-index: 3;
+}
+
+.section.call-to-action .box {
+    color: $white;
+    padding: 3.5rem 2rem;
+    background-color: $secondary;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
+
+    @media (min-width:769px) {
+        padding: 3.5rem 1.25rem;
+    }
+}
+
+.section.section.call-to-action .container .box .columns .column h3.title {
+    color: $white;
+}
+
+.section .container .box .columns .column a:hover {
+    color: $secondary;
+}
+
+//Footer
+footer.section {
+    background-color: $primary;
+    color: $white;
+    padding-top: 14rem;
+
+    @media (min-width:769px) {
+        padding-top: 16rem;
+    }
+}
+
+.is-slanted-top {
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%); 
+}
+
+footer .social-icons a.button {
+    background-color: transparent;
+    color: white;
+    border-radius: 100%;
+    margin: 0 .2rem;
+    height: 47px;
+    width: 47px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: .3s ease-in-out;
+
+    &:hover {
+        background: $white;
+        color: $primary;
+        border: 2px solid $white;
+        cursor: pointer;
+    }
+
+    @media (min-width: 769px) {
+        margin: 0 0.8rem;
+    }
+}
+
+footer .social-icons a.button.is-medium {
+    font-size: 1.05rem;
+
+    @media (min-width: 769px) {
+        font-size: 1.18rem;
+    }
+}
+
+footer .container p {
+    padding-top: 3rem;
+}
+
+//Contact
+.is-contact .navbar-brand .navbar-item {
+    color: $primary;
+    font-weight: 600;
+}
+
+.navbar.is-contact a.button {
+    color: $primary;
+    border: none;
+}
+
+.navbar.is-contact {
+    border-bottom: 1px solid #E6ECF8;
+    background: transparent;
+}
+
+.is-contact .container { 
+    padding: 0 20px; 
+}
+
+.is-contact .container .avatar {
+    width: 84px;
+    margin: -50px auto 50px;
+    position: sticky;
+    z-index: 100;
+}
+
+
+.is-contact .container h1.title { 
+    font-weight: 400; 
+    color: $secondary;
+}
+
+.is-contact .container form { 
+    max-width: 640px; 
+    margin: 32px auto 0; 
+
+    @media (min-width: 769px) {
+        margin: 60px auto 0;
+    }
+}
+
+.is-contact .container form label.label { 
+    font-weight: 400; 
+    font-size: 1.2rem; 
+    color: $secondary; 
+}
+
+.is-contact .container form input, 
+.is-contact .container form textarea, 
+.is-contact .container form select { 
+    border-color: #E6ECF8; 
+    color: $dark; 
+    box-shadow: none; 
+    font-weight: 300; 
+}
+
+.is-contact .container form input:hover, 
+.is-contact .container form textarea:hover, 
+.is-contact .container form select:hover { 
+    border-color: #E6ECF8; 
+}
+
+.is-contact .container form input:focus, 
+.is-contact .container form textarea:focus, 
+.is-contact .container form select:focus { 
+    box-shadow: none; 
+}
+
+.is-contact .container form input.is-large, 
+.is-contact .container form textarea.is-large, 
+.is-contact .container form select.is-large { 
+    font-size: 1.4rem; 
+}
+
+.is-contact .container form .select:not(.is-multiple):not(.is-loading)::after { 
+    top: 50%; border-color: $primary; 
+}
+
+.is-contact .container form .select:not(.is-multiple) { 
+    height: 50.4px; 
+}
+
+.is-contact .container form .button { 
+    margin: 20px 0 80px; 
+    border-width: 2px; 
+    font-weight: 400; 
+    height: auto; 
+    transition: .3s ease-in-out;
+}
+
+// Bulma
+@import "bulma.sass";
+

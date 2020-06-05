@@ -1,0 +1,274 @@
+/* ============================================= */
+/*                LANDING PAGE                   */
+/* ============================================= */
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: $font-family;
+    perspective: 1px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    // background-attachment: fixed;
+}
+ 
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.full-screen-nav {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    perspective-origin: 0%;
+}
+
+.landing {
+    position: relative;
+    height: 100vh;
+    color: $white;
+    text-shadow: $text-shadow;
+}
+
+.logo {
+    text-align: center;
+    height: 100vh;
+}
+
+.col-1 {
+    width: 100%;
+    max-width: 100%;
+    height: 170px;
+}
+
+.col-2 {
+    width: 100%;
+}
+
+.linchpin {
+    height: 450px;
+    width: 450px;
+}
+
+.name {
+    font-size: 60px;
+    font-weight: 700;
+} 
+
+.slogan {
+    font-size: 50px;
+    font-weight: 400;
+    width: 100vw;
+}
+  
+.nav-item {
+    position: relative;
+    height: 100vh;
+    color: $white;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    // background: 50% 50% / cover;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 0;
+        text-shadow: $text-shadow;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 22px;
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
+@include button;
+  
+// .parallax::after {
+//     content: " ";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     transform: translateZ(-1px) scale(1.5);
+//     background-size: 100%;
+//     z-index: -1;
+// }
+
+.static-story {
+    background: linear-gradient(
+                rgba(0,0,0, .5), 
+                rgba(0,0,0, .5)),
+                url('../images/matt-hoffman-7zwyUZVrt-U-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+  
+.bg-beans {
+    background: linear-gradient(
+                rgba(0,0,0, .5), 
+                rgba(0,0,0, .5)),
+                url('../images/coffee-beans-closeup-photography-867466.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.static-brew {
+    background: linear-gradient(
+                rgba(0,0,0, .5), 
+                rgba(0,0,0, .5)),
+                url('../images/clear-glass-flasks-2159106.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+  
+.bg-blog {
+    background: linear-gradient(
+                rgba(0,0,0, .5), 
+                rgba(0,0,0, .5)),
+                url('../images/drew-beamer-06IteQFtz-Q-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.static-contact {
+    background: linear-gradient(
+                rgba(0,0,0, .5), 
+                rgba(0,0,0, .5)),
+                url('../images/matt-hoffman-_v0xhIT715g-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    padding: 50px 0 15px 0;
+    width: 100%;
+    text-align: center;
+    background-color: $white;
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $color-primary;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        color: $color-secondary;
+    }
+}
+
+.footer-name {
+   display: none;
+
+    h1 {
+        color: $color-primary;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 40px;
+        padding-top: 20px;
+        margin-bottom: 7px;
+    }
+}
+
+.social a {
+    font-size: 2.5rem;
+    transition: ease-in-out .4s;
+    margin: 0 auto;
+    padding: 7px;
+    color: $color-secondary;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+@media (min-width: 504px) {
+    .col-1 {
+        height: 250px;
+    }
+}
+@media (min-width: 698px) {
+    .col-1 {
+        height: 300px;
+    }
+}
+
+@media (min-width: 725px) {
+    .slogan {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .video {
+        display: none;
+    }
+
+    body {
+        background: url('../images/photo-of-brewed-coffee-2616174.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: $break) {  
+    .logo {
+       padding-right: 30px;
+    }
+    
+    .col-1 {
+        width: 53%;
+        height: 100vh;
+    }
+
+    .slogan {
+        width: 100%;
+    }
+
+    .down-arrow {
+        padding-bottom: 20px;
+    }
+
+    .col-2 {
+        width: 40%;
+    }
+
+    .nav-item h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 70px;
+    }
+
+    .footer-name {
+        display: inline-block;
+    } 
+}

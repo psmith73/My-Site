@@ -1,0 +1,60 @@
+/* ============================================= */
+/*                   POST                        */
+/* ============================================= */
+
+@include header (url('../images/drew-beamer-06IteQFtz-Q-unsplash.jpg'), 50%, 53%);
+
+.post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+
+    @include body-padding;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: $color-primary;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: .1rem;
+    }
+
+    img {
+        height: 400px;
+        width: 300px;
+        padding: 20px 0;
+    }
+}
+
+@include button;
+  
+@include footer;
+
+@media (min-width: 1024px) {
+    .nav-menu {
+        padding: 0 50px 0 0;
+    }
+    
+    .nav-logo {
+        padding:0 0 0 50px;
+    } 
+
+    .post img {
+        height: 600px;
+        width: 400px;
+    }
+
+    .footer-name {
+        display: inline-block;
+    }
+}

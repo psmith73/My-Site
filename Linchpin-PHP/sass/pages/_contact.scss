@@ -1,0 +1,99 @@
+/* ============================================= */
+/*                  CONTACT                      */
+/* ============================================= */
+
+@include header (url('../images/matt-hoffman-_v0xhIT715g-unsplash.jpg'), 50%, 53%);
+
+.contact-form {
+    @include body-padding;
+}
+
+.chat,
+.form {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .07rem;
+    width: 80%;
+    text-align: center;
+}
+
+.chat h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .4rem;
+    color: $color-primary;
+}
+
+form { 
+    max-width: 420px; 
+    margin: 50px auto; 
+}
+
+.feedback-input {
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid $color-primary;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+
+    &:focus { 
+        border:2px solid $color-primary; 
+    }
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+[type="submit"] {
+    width: 100%;
+    background:$color-primary;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+
+    &:hover { 
+        background:$color-primary; 
+        transform: scale(1.1);
+    }
+}
+
+@include screen-reader-text;
+
+@include footer;
+
+@media (min-width: $break) {
+    .nav-menu {
+        padding: 0 50px 0 0;
+    }
+    
+    .nav-logo {
+        padding: 0 0 0 50px;
+    } 
+    
+    .chat,
+    .form {
+        padding: 3rem 3rem;
+    }
+
+    .footer-name {
+        display: inline-block;
+    }
+}

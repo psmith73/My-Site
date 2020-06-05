@@ -1,0 +1,44 @@
+/* ============================================= */
+/*                   STORY                       */
+/* ============================================= */
+
+@include header (url('../images/matt-hoffman-7zwyUZVrt-U-unsplash.jpg'), 50%, 40%);
+
+.story {
+    @include body-padding;
+}
+
+.column {
+    padding: 1rem 3rem;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+@include footer;
+
+@media (min-width: $break) {
+    .nav-menu {
+        padding: 0 50px 0 0;
+    }
+    
+    .nav-logo {
+        padding: 0 0 0 50px;
+    } 
+
+    .nav-name {
+        margin-top: 0;
+    }
+    
+    .column1,
+    .column2 {
+        padding: 3rem;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: .1rem;
+    }
+
+    .footer-name {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta property="og:title" content="Philip Smith | Web Developer">
+		<meta property="og:url" content="https://www.philipsmithwebdev.com" />
+		<meta property="og:image" content="https://github.com/psmith73/My-Site/blob/master/img/philip-ogp.png" />	
+		<meta name="description" content="I am a web developer looking for opportunities to connect with others to learn, build and create.">
+		<title>Philip Smith | Web Developer</title>
+        <link rel="stylesheet" href="bulma-0.8.2/css/bulma-tooltip.min.css">
+		<link rel="stylesheet" href="bulma-0.8.2/bulma.css">
+		<link rel="stylesheet" href="bulma-0.8.2/mystyles.css">
+	</head>
+	<body>
+
+        <nav class="navbar is-transparent is-contact">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">Philip Smith</a>
+                </div>
+                <div class="navbar-menu" id="navMenu">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-medium has-tooltip-arrow has-tooltip-bottom has-tooltip-hidden-touch" data-tooltip="Reset" onclick="document.getElementById('form').reset();">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-undo-alt fa-fw"></i>
+                                    </span>
+                                </a>
+                                <a class="button is-medium has-tooltip-arrow has-tooltip-bottom has-tooltip-hidden-touch" data-tooltip="Close" href="/">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-times fa-fw"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="is-white has-text-centered is-contact">
+            <div class="container">
+                
+                <div class="columns is-centered">
+                    <div class="column is-three-quarters">
+                        <img class="avatar" src="img/avatar.svg">
+                        <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Thanks for taking the time to connect. What would you like to talk about?</h1>
+                    </div>
+                </div>
+                    
+                <form id="form" accept-charset="UTF-8" action="/submission.html" method="POST" data-netlify="true">
+                    <div class="columns is-centered">
+                        <div class="column is-half has-text-left">
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control is-expanded">
+                                    <input class="input is-large" type="text" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-half has-text-left">
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input is-large" type="email" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-centered">
+                        <div class="column has-text-left">
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control is-expanded">
+                                    <textarea class="textarea is-large" rows="5" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-centered">
+                        <div class="column is-half">
+                            <div class="field">
+                                <div class="control has-text-centered">
+                                    <a class="button is-primary is-outlined is-rounded is-medium is-fullwidth">Submit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+               
+            </div>
+        </section>
+       
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html> 

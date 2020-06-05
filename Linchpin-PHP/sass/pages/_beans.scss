@@ -1,0 +1,30 @@
+/* ============================================= */
+/*                   BEANS                       */
+/* ============================================= */
+
+@include header (url('../images/coffee-beans-closeup-photography-867466.jpg'), 50%, 70%);
+
+
+.beans {
+    text-align: center;
+    @include body-padding;
+}
+
+@include coffee-bean;
+
+@include footer;
+
+@media (min-width: $break) {
+    .nav-menu {
+        padding: 0 50px 0 0;
+    }
+    
+    .nav-logo {
+        padding: 0 0 0 50px;
+    } 
+
+    .footer-name {
+        display: inline-block;
+    }
+}    
+  

@@ -1,0 +1,328 @@
+/* ============================================= */
+/*                  HEADER                       */
+/* ============================================= */
+
+@mixin header ($image, $position-x, $position-y) {
+    * {
+        font-family: $font-family;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0 0 178.438px 0;
+        color: $color-secondary;
+    }
+    
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    ul {
+        margin-bottom: 0;
+    }
+    
+    .nav-menu {
+        padding: 0;
+    
+        li {
+            padding: 7px;
+            font-size: 17px;
+            list-style: none;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+    
+        li a {
+            text-decoration: none;
+            color: $color-primary;
+            transition: ease-in-out .4s;
+        }
+    
+        li a:hover {
+            color: $color-secondary;
+        }
+    }
+    
+    .nav-logo a, 
+    .nav-logo a:visited,
+    .nav-logo a:active,
+    .nav-logo a:focus {
+        text-align: center;
+        padding-top: 20px;
+        text-decoration: none;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+            color: inherit;
+        }
+    } 
+    
+    .linchpin {
+        @include linchpin
+    }
+    
+    .linchpin, 
+    .nav-name {
+        display: inline-block;
+    }
+    
+    .nav-name {
+        color: $color-primary;
+        font-size: 25px;
+        margin-top: 10px;
+        vertical-align: middle;
+    }
+    
+    .banner {
+        width: 100%;
+        background: linear-gradient(
+                  rgba(30,30,30, .5), 
+                  rgba(30,30,30, .5)),
+                  $image;
+        background-size: cover;
+        background-position: $position-x $position-y;
+        background-repeat: no-repeat;
+        height: 297px;
+    
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            margin-bottom: 7px;
+            color: $white;
+            text-transform: uppercase;
+            text-shadow: $text-shadow;
+        }
+    }
+    
+    .divide {
+        height: 0;
+        width: 45px;
+        border: 4px solid $color-primary;
+        margin: 0 auto;
+        
+    }
+}
+
+/* ============================================= */
+/*                BODY PADDING                   */
+/* ============================================= */
+
+@mixin body-padding {
+    padding: 30px 0;
+}
+
+/* ============================================= */
+/*                 LINCHPIN                      */
+/* ============================================= */
+
+@mixin linchpin {
+    height: 60px;
+    width: 60px;
+    margin: 7px;
+}
+
+/* ============================================= */
+/*                COFFEE BEAN                    */
+/* ============================================= */
+
+@mixin coffee-bean {
+    .coffee-bean {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: .1rem;
+        padding: 20px;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    
+        img {
+            height: 200px;
+            width: 200px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+    }
+
+    strong {
+        color: $color-primary;
+    }
+}
+
+/* ============================================= */
+/*                  MODAL                        */
+/* ============================================= */
+
+@mixin modal {
+    .modal-dialog {
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .modal-title {
+        color: $color-primary;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .modal-body h3 {
+        font-weight: 500;
+        color: $color-primary;
+    }
+    
+    .close {
+        color: $color-secondary;
+    
+        &:hover {
+            color: $color-primary;
+           
+        }
+    }
+    
+    .equipment {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        text-align: left;
+        padding: 20px;
+    }
+    
+    .directions {
+        column-count: 1;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        text-align: left;
+        padding: 20px;
+    }
+    
+    .equipment,
+    .directions {
+        ul {
+            margin-top: 0;
+        }
+    
+        li {
+            line-height: 1.5rem;
+            letter-spacing: .05rem;
+            padding:0 35px 10px 0;
+        }
+    } 
+}
+
+/* ============================================= */
+/*                   BUTTON                      */
+/* ============================================= */
+
+@mixin button {
+    .button,
+    .button:visited,
+    .button:active,
+    .button:focus {
+        padding: 10px;
+        background-color: $color-primary;
+        color: $white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+        transition: transform .2s ease-in-out;
+        display: inline-block;
+        outline: none;
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            text-decoration: none;
+            color: $white;
+            border: none;
+        }
+    }
+
+    a:not([href]),
+    a:not([href]):hover {
+        color: $white;
+    }
+
+    a:-webkit-any-link {
+        color: $white;
+        text-decoration: none;
+        border: none;
+    }
+}
+
+/* ============================================= */
+/*             SCREEN READER TEXT                */
+/* ============================================= */
+
+@mixin screen-reader-text {
+    .screen-reader-text {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal !important;
+    }
+}
+
+/* ============================================= */
+/*                  FOOTER                       */
+/* ============================================= */
+
+@mixin footer {
+    footer {
+        padding: 15px 0;
+        margin-top: 40px;
+        width: 100%;
+        height: 178.438px;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        background-color: $color-primary;
+        color: $white;
+    
+        h3 {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    
+        p {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    
+    .footer-name {
+        display: none;
+    
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+        }
+    }
+    
+    .social a {
+        font-size: 2.5rem;
+        transition: ease-in-out .4s;
+        margin: 0 auto;
+        padding: 7px;
+    
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+/* ============================================= */
+/*                  BREW                         */
+/* ============================================= */
+
+@include header(url('../images/clear-glass-flasks-2159106.jpg'), 50%, 70%);
+
+
+.brew-guide {
+    text-align: center;
+    @include body-padding;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: $color-primary;
+    }
+
+    img {
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+    }
+}
+
+.pour-over,
+.cold-brew,
+.french-press {
+    width: 70%;
+    padding: 20px 0;  
+}
+
+.pour-over-description,
+.french-press-description,
+.cold-brew-description {
+    width: 80%;
+    padding-top: 20px;
+
+    p {
+        margin-bottom: 30px;
+        line-height: 2rem;
+        letter-spacing: .03rem;
+    }
+}
+
+@include button;
+
+@include modal;
+  
+@include footer;
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 70%;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (min-width: $break) {
+    .nav-menu {
+        padding: 0 50px 0 0;
+    }
+    
+    .nav-logo {
+        padding:0 0 0 50px;
+    } 
+    
+    .pour-over-description,
+    .french-press-description,
+    .cold-brew-description {
+        width: 50%;
+
+        p {
+            margin-bottom: 30px;
+            line-height: 2rem;
+            letter-spacing: .03rem;
+        }
+    }
+    
+    .directions {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+    }
+
+    .equipment li,
+    .directions li {
+        break-inside: avoid-column;
+        page-break-inside: avoid;
+    }
+
+    .footer-name {
+        display: inline-block;
+    }
+}

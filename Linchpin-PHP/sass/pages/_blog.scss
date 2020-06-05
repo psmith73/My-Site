@@ -1,0 +1,94 @@
+/* ============================================= */
+/*                 BLOG                          */
+/* ============================================= */
+
+@include header(url('../images/drew-beamer-06IteQFtz-Q-unsplash.jpg'), 50%, 53%);
+
+.blog-posts {
+    text-align: center;
+    padding: 30px 0;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: $color-primary;
+    }
+
+    img {
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+    }
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 20px 0;  
+}
+
+
+.blog-post-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 20px 0; 
+}
+
+.blog-post-description {
+    width: 80%;
+    padding-top: 20px;
+}
+
+.tagline,
+.date {
+    line-height: 2rem;
+    letter-spacing: .03rem;
+}
+
+.date {
+    margin-bottom: 30px;
+    display: block;
+    
+}
+
+@include button;
+  
+@include footer;
+
+@media (min-width: $break) {
+    .nav-menu {
+        padding: 0 50px 0 0;
+    }
+    
+    .nav-logo {
+        padding:0 0 0 50px;
+    } 
+    
+    .blog-post-reverse,
+    .blog-post {
+        flex-direction: row;
+    }
+    
+    .blog-post-description {
+        width: 50%;
+    }
+    
+    .timeline,
+    .date {
+        line-height: 2rem;
+        letter-spacing: .03rem;
+    }
+
+    .footer-name {
+        display: inline-block;
+    }
+}
